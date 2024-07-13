@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Observable, map, of, startWith } from 'rxjs';
+import { SharedService } from './shared.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -14,6 +15,10 @@ export class AppComponent {
   filterForm: FormGroup = new FormGroup({
     optionsControl: new FormControl(''),
     optionsControlSub: new FormControl(''),
+  });
+
+  translateForm: FormGroup = new FormGroup({
+    translate: new FormControl('en'),
   });
 
   options: string[] = [
@@ -73,7 +78,11 @@ export class AppComponent {
   filteredOptions!: Observable<string[]>;
   filteredOptionsSub!: Observable<string[]>;
 
-  constructor(private router: Router, private route: ActivatedRoute) {}
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute,
+    private sharedService: SharedService
+  ) {}
 
   ngOnInit() {
     this.filteredOptions = this.filterForm
@@ -91,8 +100,13 @@ export class AppComponent {
       );
   }
 
-  isActive(url: string): boolean {
-    return this.router.url === url;
+  isActive(urlSegment: string): boolean {
+    return this.router.url.includes(urlSegment);
+  }
+
+  translateFn() {
+    let translateValue = this.translateForm.get('translate')?.value;
+    this.sharedService.setLangEng(translateValue !== 'en');
   }
 
   subclick() {
@@ -106,42 +120,39 @@ export class AppComponent {
         this.newoptsub = of([]);
       }
     }
-      
   }
-  some() {
-    // const selectedOption = this.filterForm.get('optionsControl')?.value;
 
+  some() {
     const selectedOption2 = this.filterForm.get('optionsControlSub')?.value;
     console.log('hi');
     if (selectedOption2 === '') {
       this.filterForm.get('optionsControl')?.reset();
-      this.filterForm.get('optionsControlSub')?.disable();    
+      this.filterForm.get('optionsControlSub')?.disable();
     }
-   
-    
   }
+
   filterFn(value: string): string[] {
     const filterValue = value.toLowerCase();
     return this.options.filter((option) =>
       option.toLowerCase().includes(filterValue)
     );
   }
+
   moduleclick() {
     const selectedOption = this.filterForm.get('optionsControl')?.value;
 
     if (selectedOption !== '') {
       this.filterForm.get('optionsControlSub')?.enable();
-    }
-    else{
+    } else {
       this.filterForm.get('optionsControlSub')?.reset();
-
     }
     // if(selectedOption === ''){
-    //   this.filterForm.get('optionsControlSub')?.reset(); 
+    //   this.filterForm.get('optionsControlSub')?.reset();
     // }
     // if (this.filterForm.get('optionsControl')?.value === '') {
     // }
   }
+
   resetsearch() {
     this.filterForm.reset();
     const selectedOption = this.filterForm.get('optionsControl')?.value;
@@ -150,6 +161,7 @@ export class AppComponent {
       this.filterForm.get('optionsControlSub')?.disable();
     }
   }
+
   filterSubFn(value: string): string[] {
     const filterValue = value.toLowerCase();
     return this.options.filter((option) =>

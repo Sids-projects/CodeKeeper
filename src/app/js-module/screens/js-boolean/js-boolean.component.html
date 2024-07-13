@@ -1,10 +1,5 @@
-<div class="popup-header">
-  <mat-slide-toggle (change)="translate($event)"></mat-slide-toggle>
-  <i class="fa-solid fa-xmark" data-bs-dismiss="modal" aria-label="Close"></i>
-</div>
-
-<div class="p-4">
-  <h2 class="h2-title">And</h2>
+<div>
+  <h2 class="h2-title">#And</h2>
   <ul class="ul-list" *ngIf="langEng; else and">
     <li>Oru value false ah irundha aprm ella value um false aagidum</li>
   </ul>
@@ -16,7 +11,7 @@
   <app-js-code [showCode]="'boolean-and'"></app-js-code>
   <hr />
 
-  <h2 class="h2-title">Or</h2>
+  <h2 class="h2-title">#Or</h2>
   <ul class="ul-list" *ngIf="langEng; else or">
     <li>Oru value true ah irundha ella value um true ah irukum</li>
   </ul>
@@ -28,7 +23,7 @@
   <app-js-code [showCode]="'boolean-or'"></app-js-code>
   <hr />
 
-  <h2 class="h2-title">Not</h2>
+  <h2 class="h2-title">#Not</h2>
   <ul class="ul-list" *ngIf="langEng; else not">
     <li>Value va opposite ah mathidum</li>
   </ul>

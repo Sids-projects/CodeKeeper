@@ -1,67 +1,74 @@
 <header>
   <h1>CodeKeeper</h1>
-  <i
-    class="fa-solid fa-magnifying-glass"
-    data-bs-toggle="modal"
-    data-bs-target="#searchMain"
-    (click)="resetsearch()"
-  ></i>
-</header>
-
-<section class="cover-div">
-  <div>
-    <h2>📒</h2>
-    <p>CodeKeeper</p>
-  </div>
-</section>
-
-<main>
   <nav>
     <a
       [routerLink]="'/cssComponent'"
-      [ngClass]="{ 'active-link': isActive('/cssComponent') }"
-      >📒 Css</a
+      [ngClass]="{ 'active-link': isActive('cssComponent') }"
     >
+      <i class="fa-brands fa-css3-alt"></i
+    ></a>
     <a
       [routerLink]="'/scssComponent'"
-      [ngClass]="{ 'active-link': isActive('/scssComponent') }"
-      >📒 Scss</a
+      [ngClass]="{ 'active-link': isActive('scssComponent') }"
     >
+      <i class="fa-brands fa-sass"></i
+    ></a>
     <a
       [routerLink]="'/jsComponent'"
-      [ngClass]="{ 'active-link': isActive('/jsComponent') }"
-      >📒 Javascript</a
+      [ngClass]="{ 'active-link': isActive('jsComponent') }"
     >
+      <i class="fa-brands fa-js"></i
+    ></a>
     <a
       [routerLink]="'/angularComponent'"
-      [ngClass]="{ 'active-link': isActive('/angularComponent') }"
-      >📒 Angular</a
+      [ngClass]="{ 'active-link': isActive('angularComponent') }"
     >
+      <i class="fa-brands fa-angular"></i
+    ></a>
     <a
       [routerLink]="'/reactJsComponent'"
-      [ngClass]="{ 'active-link': isActive('/reactJsComponent') }"
-      >📒 React Js</a
+      [ngClass]="{ 'active-link': isActive('reactJsComponent') }"
     >
+      <i class="fa-brands fa-react"></i
+    ></a>
     <a
       [routerLink]="'/reactNativeComponent'"
-      [ngClass]="{ 'active-link': isActive('/reactNativeComponent') }"
-      >📒 React Native</a
+      [ngClass]="{ 'active-link': isActive('reactNativeComponent') }"
     >
+      <i class="fa-brands fa-react"></i
+    ></a>
     <a
       [routerLink]="'/githubComponent'"
-      [ngClass]="{ 'active-link': isActive('/githubComponent') }"
-      >📒 Github</a
+      [ngClass]="{ 'active-link': isActive('githubComponent') }"
     >
+      <i class="fa-brands fa-github"></i
+    ></a>
     <a
       [routerLink]="'/otherComponent'"
-      [ngClass]="{ 'active-link': isActive('/otherComponent') }"
-      >📒 Other</a
+      [ngClass]="{ 'active-link': isActive('otherComponent') }"
     >
+      <i class="fa-solid fa-window-restore"></i
+    ></a>
   </nav>
-  <section>
-    <router-outlet></router-outlet>
-  </section>
-</main>
+  <div class="set-03">
+    <form [formGroup]="translateForm">
+      <select formControlName="translate" (change)="translateFn()">
+        <option value="en">En</option>
+        <option value="tn">Tn</option>
+      </select>
+    </form>
+    <i
+      class="fa-solid fa-magnifying-glass search-icon"
+      data-bs-toggle="modal"
+      data-bs-target="#searchMain"
+      (click)="resetsearch()"
+    ></i>
+  </div>
+</header>
+
+<section class="app-body">
+  <router-outlet></router-outlet>
+</section>
 
 <!-- Modal -->
 <div

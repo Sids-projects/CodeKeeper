@@ -1,10 +1,5 @@
-<div class="popup-header">
-  <mat-slide-toggle (change)="translate($event)"></mat-slide-toggle>
-  <i class="fa-solid fa-xmark" data-bs-dismiss="modal" aria-label="Close"></i>
-</div>
-
-<div class="p-4">
-  <h2 class="h2-title">Array</h2>
+<div>
+  <h2 class="h2-title">#Array</h2>
   <ul class="ul-list" *ngIf="langEng; else langOther">
     <li>
       Array vandhu oru periya container mathri adhukulla namba variables lam
@@ -33,15 +28,15 @@
   </ng-template>
   <hr />
 
-  <h2 class="h2-title">.length Property</h2>
+  <h2 class="h2-title">#.length Property</h2>
   <app-js-code [showCode]="'array-01'"></app-js-code>
   <hr />
 
-  <h2 class="h2-title">Usage</h2>
+  <h2 class="h2-title">#Usage</h2>
   <app-js-code [showCode]="'array-02'"></app-js-code>
   <hr />
 
-  <h2 class="h2-title">Operators</h2>
+  <h2 class="h2-title">#Operators</h2>
   <h3 class="h3-title">Push: (Add Element)</h3>
   <ul class="ul-list" *ngIf="langEng; else langOther">
     <li>Array oda end la element ah add panum</li>

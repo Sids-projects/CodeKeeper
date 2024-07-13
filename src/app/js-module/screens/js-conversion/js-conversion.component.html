@@ -1,10 +1,5 @@
-<div class="popup-header">
-  <mat-slide-toggle (change)="translate($event)"></mat-slide-toggle>
-  <i class="fa-solid fa-xmark" data-bs-dismiss="modal" aria-label="Close"></i>
-</div>
-
-<div class="p-4">
-  <h2 class="h2-title">Type Conversion</h2>
+<div>
+  <h2 class="h2-title">#Type Conversion</h2>
   <ul class="ul-list" *ngIf="langEng; else conversion">
     <li>
       Nambalave oru type la irundhu inoru type ku value va convert panuvom
@@ -20,7 +15,7 @@
   <app-js-code [showCode]="'type-conversion'"></app-js-code>
   <hr />
 
-  <h2 class="h2-title">Type Coercion</h2>
+  <h2 class="h2-title">#Type Coercion</h2>
   <ul class="ul-list" *ngIf="langEng; else coercion">
     <li>Javascript automatic type convert panikum</li>
     <li>

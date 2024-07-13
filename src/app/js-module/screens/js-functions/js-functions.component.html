@@ -1,10 +1,5 @@
-<div class="popup-header">
-  <mat-slide-toggle (change)="translate($event)"></mat-slide-toggle>
-  <i class="fa-solid fa-xmark" data-bs-dismiss="modal" aria-label="Close"></i>
-</div>
-
-<div class="p-4">
-  <h2 class="h2-title">Function</h2>
+<div>
+  <h2 class="h2-title">#Function</h2>
   <ul class="ul-list" *ngIf="langEng; else langOther">
     <li>
       Functions radhu oru piece of code namba adhu ethana time venalum reuse
@@ -43,7 +38,7 @@
   <app-js-code [showCode]="'function-01'"></app-js-code>
   <hr />
 
-  <h2 class="h2-title">Expression & Declaration</h2>
+  <h2 class="h2-title">#Expression & Declaration</h2>
   <table class="table table-dark" *ngIf="langEng; else expDec">
     <thead>
       <tr>

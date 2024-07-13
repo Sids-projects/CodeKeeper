@@ -5,7 +5,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'jsComponent',
+    redirectTo: 'jsComponent/JsIntroRoute',
     pathMatch: 'full',
   },
   {
