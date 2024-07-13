@@ -1,6 +1,37 @@
+<p
+  class="mobile-menu"
+  data-bs-toggle="offcanvas"
+  data-bs-target="#offcanvasWithBothOptions"
+  aria-controls="offcanvasWithBothOptions"
+>
+  <i class="fa-solid fa-bars-staggered"></i> Menu
+</p>
 <div class="main-view">
-  <app-js-home></app-js-home>
+  <app-js-home class="js-home"></app-js-home>
   <div class="padding-top">
     <router-outlet></router-outlet>
+  </div>
+</div>
+
+<div
+  class="offcanvas offcanvas-start"
+  data-bs-scroll="true"
+  tabindex="-1"
+  id="offcanvasWithBothOptions"
+  aria-labelledby="offcanvasWithBothOptionsLabel"
+>
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+      Backdrop with scrolling
+    </h5>
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="offcanvas-body">
+    <p><app-js-home></app-js-home></p>
   </div>
 </div>

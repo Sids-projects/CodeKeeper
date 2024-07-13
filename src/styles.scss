@@ -252,6 +252,25 @@ main {
   gap: 3.4rem;
 }
 
+.mobile-menu {
+  display: none;
+  padding: 0 2rem 2rem 2rem;
+}
+
+@media only screen and (max-width: 780px) {
+  .main-view {
+    grid-template-columns: 100vw;
+  }
+
+  .js-home {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
 .topics-box {
   border: 2px solid rgb(96, 96, 96);
   background-color: #1a1a1a;
