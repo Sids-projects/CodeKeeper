@@ -4,6 +4,11 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: 'jsComponent',
+    pathMatch: 'full',
+  },
+  {
     path: 'cssModule',
     loadChildren: () =>
       import('./css-module/css-module.module').then((m) => m.CssModuleModule),
