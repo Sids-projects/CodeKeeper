@@ -1,6 +1,6 @@
 <div>
   <div>
-    <h2 class="h2-title">#High level program</h2>
+    <h2 class="h2-title"># High level program</h2>
     <ul class="ul-list" *ngIf="langEng; else hlp">
       <li>
         Computer la run aagura ella peogram kum eadho oru hardware theva padum
@@ -50,7 +50,7 @@
   <hr />
 
   <div>
-    <h2 class="h2-title">#Low level language</h2>
+    <h2 class="h2-title"># Low level language</h2>
     <ul class="ul-list" *ngIf="langEng; else lll">
       <li>
         Program run aaguradhuku theva padura ellathaum nambalave dha manage
@@ -71,7 +71,7 @@
   <hr />
 
   <div>
-    <h2 class="h2-title">#Computer processor</h2>
+    <h2 class="h2-title"># Computer processor</h2>
     <ul class="ul-list" *ngIf="langEng; else cp">
       <li>Zero and one mattum dha computer understand panikum</li>
       <li>Zero and one la program eludha mudiyadhu</li>
@@ -98,7 +98,7 @@
   <hr />
 
   <div>
-    <h2 class="h2-title">#Multi-Paradigm</h2>
+    <h2 class="h2-title"># Multi-Paradigm</h2>
     <div *ngIf="langEng; else mp">
       <p>
         Nala javascirpt code structure epdi oru code ah correct ah eludhanum nu
@@ -135,7 +135,7 @@
   <hr />
 
   <div>
-    <h2 class="h2-title">#Dynamic</h2>
+    <h2 class="h2-title"># Dynamic</h2>
     <ul class="ul-list" *ngIf="langEng; else dynamic">
       <li>Dynamic apdina automatic ah adhuvave change panikum</li>
       <li>Javascript la namba variable ku type asign pana matom</li>
@@ -229,7 +229,7 @@
   <hr />
 
   <div>
-    <h2 class="h2-title">#The Javascript engine and runtime</h2>
+    <h2 class="h2-title"># The Javascript engine and runtime</h2>
     <div *ngIf="langEng; else jsEngine">
       <ul class="ul-list">
         <li>Ella browser kum athoda sondha javascript engine irukum</li>
@@ -304,7 +304,7 @@
   <hr />
 
   <div>
-    <h2 class="h2-title">#Js Runtime</h2>
+    <h2 class="h2-title"># Js Runtime</h2>
     <div *ngIf="langEng; else jsRuntime">
       <ul class="ul-list">
         <li>
@@ -544,9 +544,9 @@
   <hr />
 
   <div>
-    <h2 class="h2-title">#Scope and the scope chain</h2>
+    <h2 class="h2-title"># Scope and the scope chain</h2>
     <div *ngIf="langEng; else scopeChain">
-      <p class="callout">
+      <p class="quote">
         Scope namba code la oru place anga dha variable la declare aagum.
       </p>
       <h3 class="h3-title">Scoping:</h3>
@@ -605,7 +605,7 @@
     </div>
     <ng-template #scopeChain>
       <div>
-        <p class="callout">
+        <p class="quote">
           Scope is the place in our code where variables are declared.
         </p>
         <h3 class="h3-title">Scoping:</h3>
@@ -662,7 +662,7 @@
   </div>
   <hr />
 
-  <h2 class="h2-title">#Variable lookup in scope chain</h2>
+  <h2 class="h2-title"># Variable lookup in scope chain</h2>
   <app-js-code [showCode]="'js-adv-intro06'"></app-js-code>
   <app-js-code [showCode]="'js-adv-intro07'"></app-js-code>
   <hr />

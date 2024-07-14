@@ -1,13 +1,92 @@
 <div>
-  <h2 class="h2-title">#Prompt</h2>
-  <!-- <ul class="ul-list" *ngIf="langEng; else langOther">
-    <li></li>
-  </ul>
-  <ng-template #langOther>
+  <h2 class="h2-title"># Prompt</h2>
+  <p class="quote">
+    The prompt() function in JavaScript is a simple way to get user input via a
+    dialog box. However, it has some limitations
+  </p>
+  <hr />
+  <div *ngIf="langEng; else langOther">
+    <h3 class="h3-title">Basic Usage</h3>
     <ul class="ul-list">
-      <li></li>
+      <li>
+        prompt() function oru dialog box kamikum simple ah oru message aprm text
+        input oda kamikum.
+      </li>
+      <li>
+        Idhu user enter pana text apdi enter panalana aprm cancel pana null ku
+        kamikum.
+      </li>
     </ul>
-  </ng-template> -->
-  <app-js-code [showCode]="'Prompt'"></app-js-code>
+    <div class="diagram-div">
+      <img
+        src="./assets/prompt-basicUsage.svg"
+        alt="comment-diagram"
+        class="prompt-basicUsage common-diagram"
+      />
+    </div>
+    <hr />
+    <h3 class="h3-title">Adding Default Value</h3>
+    <p>
+      Namba oru default value kudukalam prompt function la rendavadhu argument
+      ah pass pani
+    </p>
+    <div class="diagram-div">
+      <img
+        src="./assets/prompt-defaultValue.svg"
+        alt="promptDefaultValue-diagram"
+        class="prompt-defaultValue common-diagram"
+      />
+    </div>
+    <hr />
+    <h3 class="h3-title">Limitations of prompt()</h3>
+    <ul class="ul-list">
+      <li>prompt() function la single input field mattum dha allow panum.</li>
+      <li>
+        Namabala la direct ah multiple input fields vara mathri customize pana
+        mudiaydhu.
+      </li>
+    </ul>
+  </div>
+  <ng-template #langOther>
+    <h3 class="h3-title">Basic Usage</h3>
+    <ul class="ul-list">
+      <li>
+        The prompt() function displays a dialog box with a specified message,
+        along with a text input field.
+      </li>
+      <li>
+        It returns the text entered by the user or null if the user cancels the
+        input.
+      </li>
+    </ul>
+    <div class="diagram-div">
+      <img
+        src="./assets/prompt-basicUsage.svg"
+        alt="comment-diagram"
+        class="prompt-basicUsage common-diagram"
+      />
+    </div>
+    <hr />
+    <h3 class="h3-title">Adding Default Value</h3>
+    <p>
+      You can provide a default value for the input field by passing a second
+      argument to the prompt() function.
+    </p>
+    <div class="diagram-div">
+      <img
+        src="./assets/prompt-defaultValue.svg"
+        alt="promptDefaultValue-diagram"
+        class="prompt-defaultValue common-diagram"
+      />
+    </div>
+    <hr />
+    <h3 class="h3-title">Limitations of prompt()</h3>
+    <ul class="ul-list">
+      <li>The prompt() function only allows a single input field.</li>
+      <li>
+        It cannot be customized to include multiple input fields directly.
+      </li>
+    </ul>
+  </ng-template>
   <hr />
 </div>
