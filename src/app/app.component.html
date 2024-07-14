@@ -1,75 +1,80 @@
-<header>
-  <h1 class="app-name">CodeKeeper</h1>
-  <h1 class="app-name-mob">Ck</h1>
-  <nav class="app-modules">
-    <a
-      [routerLink]="'/cssComponent'"
-      [ngClass]="{ 'active-link': isActive('cssComponent') }"
-    >
-      <i class="fa-brands fa-css3-alt"></i
-    ></a>
-    <a
-      [routerLink]="'/scssComponent'"
-      [ngClass]="{ 'active-link': isActive('scssComponent') }"
-    >
-      <i class="fa-brands fa-sass"></i
-    ></a>
-    <a
-      [routerLink]="'/jsComponent'"
-      [ngClass]="{ 'active-link': isActive('jsComponent') }"
-    >
-      <i class="fa-brands fa-js"></i
-    ></a>
-    <a
-      [routerLink]="'/angularComponent'"
-      [ngClass]="{ 'active-link': isActive('angularComponent') }"
-    >
-      <i class="fa-brands fa-angular"></i
-    ></a>
-    <a
-      [routerLink]="'/reactJsComponent'"
-      [ngClass]="{ 'active-link': isActive('reactJsComponent') }"
-    >
-      <i class="fa-brands fa-react"></i
-    ></a>
-    <a
-      [routerLink]="'/reactNativeComponent'"
-      [ngClass]="{ 'active-link': isActive('reactNativeComponent') }"
-    >
-      <i class="fa-brands fa-react"></i
-    ></a>
-    <a
-      [routerLink]="'/githubComponent'"
-      [ngClass]="{ 'active-link': isActive('githubComponent') }"
-    >
-      <i class="fa-brands fa-github"></i
-    ></a>
-    <a
-      [routerLink]="'/otherComponent'"
-      [ngClass]="{ 'active-link': isActive('otherComponent') }"
-    >
-      <i class="fa-solid fa-window-restore"></i
-    ></a>
-  </nav>
-  <div class="set-03">
-    <form [formGroup]="translateForm">
-      <select formControlName="translate" (change)="translateFn()">
-        <option value="en">En</option>
-        <option value="tn">Tn</option>
-      </select>
-    </form>
-    <i
-      class="fa-solid fa-magnifying-glass search-icon"
-      data-bs-toggle="modal"
-      data-bs-target="#searchMain"
-      (click)="resetsearch()"
-    ></i>
-  </div>
-</header>
+<main id="app-main">
+  <header id="app-header">
+    <div class="set-01">
+      <h1 class="logo">CodeKeeper</h1>
+      <h1
+        class="logoMob"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#staticBackdrop"
+        aria-controls="staticBackdrop"
+      >
+        <i class="fa-solid fa-bars-staggered"></i>&nbsp; Ck
+      </h1>
+    </div>
+    <nav class="set-02">
+      <a
+        [routerLink]="'/cssComponent'"
+        [ngClass]="{ 'active-link': isActive('cssComponent') }"
+      >
+        <i class="fa-brands fa-css3-alt"></i
+      ></a>
+      <a
+        [routerLink]="'/scssComponent'"
+        [ngClass]="{ 'active-link': isActive('scssComponent') }"
+      >
+        <i class="fa-brands fa-sass"></i
+      ></a>
+      <a
+        [routerLink]="'/jsComponent'"
+        [ngClass]="{ 'active-link': isActive('jsComponent') }"
+      >
+        <i class="fa-brands fa-js"></i
+      ></a>
+      <a
+        [routerLink]="'/angularComponent'"
+        [ngClass]="{ 'active-link': isActive('angularComponent') }"
+      >
+        <i class="fa-brands fa-angular"></i
+      ></a>
+      <a
+        [routerLink]="'/reactJsComponent'"
+        [ngClass]="{ 'active-link': isActive('reactJsComponent') }"
+      >
+        <i class="fa-brands fa-react"></i
+      ></a>
+      <a
+        [routerLink]="'/githubComponent'"
+        [ngClass]="{ 'active-link': isActive('githubComponent') }"
+      >
+        <i class="fa-brands fa-github"></i
+      ></a>
+      <a
+        [routerLink]="'/otherComponent'"
+        [ngClass]="{ 'active-link': isActive('otherComponent') }"
+      >
+        <i class="fa-solid fa-window-restore"></i
+      ></a>
+    </nav>
+    <div class="set-03">
+      <form [formGroup]="translateForm">
+        <select formControlName="translate" (change)="translateFn()">
+          <option value="en">En</option>
+          <option value="tn">Tn</option>
+        </select>
+      </form>
+      <i
+        class="fa-solid fa-magnifying-glass search-icon"
+        data-bs-toggle="modal"
+        data-bs-target="#searchMain"
+        (click)="resetsearch()"
+      ></i>
+    </div>
+  </header>
 
-<section class="app-body">
-  <router-outlet></router-outlet>
-</section>
+  <section>
+    <router-outlet></router-outlet>
+  </section>
+</main>
 
 <!-- Modal -->
 <div
@@ -84,7 +89,7 @@
   >
     <div class="modal-content">
       <div class="modal-body">
-        <form [formGroup]="filterForm" class="filter-main">
+        <form [formGroup]="filterForm" id="app-search">
           <div class="filter-form01">
             <input
               class="filter01"
