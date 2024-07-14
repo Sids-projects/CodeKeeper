@@ -62,7 +62,15 @@ header {
     font-weight: 600 !important;
   }
 
-  nav {
+  .app-name {
+    display: block;
+  }
+
+  .app-name-mob {
+    display: none;
+  }
+
+  .app-modules {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,6 +94,40 @@ header {
     .search-icon {
       font-size: 2rem;
     }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  header {
+    h1 {
+      width: 7rem !important;
+    }
+  }
+
+  .app-name {
+    display: none !important;
+  }
+
+  .app-name-mob {
+    display: block !important;
+  }
+
+  .app-modules {
+    width: 13rem;
+    display: flex;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 1.8rem;
+    overflow-x: scroll;
+    padding: 0 0.6rem;
+
+    i {
+      font-size: 2.6rem;
+    }
+  }
+
+  .set-03 {
+    width: 7rem !important;
   }
 }
 
