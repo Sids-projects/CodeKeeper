@@ -8,24 +8,6 @@
         veachikum
       </li>
     </ul>
-    <table class="table table-dark">
-      <thead>
-        <tr>
-          <th>Single Line</th>
-          <th>Multi Line</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Short comments one line ku aprm</td>
-          <td>Longer ones nariya content irundha</td>
-        </tr>
-        <tr>
-          <td><app-js-code [showCode]="'singleComment'"></app-js-code></td>
-          <td><app-js-code [showCode]="'miltipleComments'"></app-js-code></td>
-        </tr>
-      </tbody>
-    </table>
   </div>
   <ng-template #and>
     <div>
@@ -38,24 +20,13 @@
           using yet.
         </li>
       </ul>
-      <table class="table table-dark">
-        <thead>
-          <tr>
-            <th>Single Line</th>
-            <th>Multi Line</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>short comments for one line and</td>
-            <td>longer ones for when you have more to say.</td>
-          </tr>
-          <tr>
-            <td><app-js-code [showCode]="'singleComment'"></app-js-code></td>
-            <td><app-js-code [showCode]="'miltipleComments'"></app-js-code></td>
-          </tr>
-        </tbody>
-      </table>
     </div>
   </ng-template>
+  <div class="diagram-div">
+    <img
+      src="./assets/comment.svg"
+      alt="comment-diagram"
+      class="comment-img common-diagram"
+    />
+  </div>
 </div>

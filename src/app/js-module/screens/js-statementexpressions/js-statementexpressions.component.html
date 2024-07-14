@@ -1,43 +1,21 @@
 <div>
   <h2 class="h2-title">#Statement & Expression</h2>
-  <table class="table table-dark" *ngIf="langEng; else stateExp">
-    <thead>
-      <tr>
-        <th>Statement</th>
-        <th>Expression</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Declaration radhu oru sentence mathri</td>
-        <td>Expression radhu oru sentence la iruka word mathri</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>Expression radhu oru peace of code mathri oru value va kudukum</td>
-      </tr>
-    </tbody>
-  </table>
+  <div *ngIf="langEng; else stateExp">
+    <div class="diagram-div">
+      <img
+        src="./../../../../assets/StmptExpr-tn.svg"
+        alt="comment-diagram"
+        class="comment-img common-diagram"
+      />
+    </div>
+  </div>
   <ng-template #stateExp>
-    <table class="table table-dark">
-      <thead>
-        <tr>
-          <th>Statement</th>
-          <th>Expression</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>A Declaration is like a complete sentence</td>
-          <td>A Expression are words in that build up the whole sentences</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>Expression is a peace of code that produces a value.</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="diagram-div">
+      <img
+        src="./../../../../assets/StmptExpr-en.svg"
+        alt="comment-diagram"
+        class="comment-img common-diagram"
+      />
+    </div>
   </ng-template>
-  <app-js-code [showCode]="'statement-expression'"></app-js-code>
-  <hr />
 </div>

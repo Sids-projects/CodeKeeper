@@ -1,37 +1,21 @@
 <div>
-  <h2 class="h2-title">#And</h2>
-  <ul class="ul-list" *ngIf="langEng; else and">
-    <li>Oru value false ah irundha aprm ella value um false aagidum</li>
-  </ul>
+  <h2 class="h2-title">#Boolean Logic: And, Or, Not</h2>
+  <div *ngIf="langEng; else and">
+    <div class="diagram-div">
+      <img
+        src="./assets/andOrNot-tn.svg"
+        alt="comment-diagram"
+        class="comment-img common-diagram"
+      />
+    </div>
+  </div>
   <ng-template #and>
-    <ul class="ul-list">
-      <li>If one of the value is false then all of them will false.</li>
-    </ul>
+    <div class="diagram-div">
+      <img
+        src="./assets/andOrNot-en.svg"
+        alt="comment-diagram"
+        class="comment-img common-diagram"
+      />
+    </div>
   </ng-template>
-  <app-js-code [showCode]="'boolean-and'"></app-js-code>
-  <hr />
-
-  <h2 class="h2-title">#Or</h2>
-  <ul class="ul-list" *ngIf="langEng; else or">
-    <li>Oru value true ah irundha ella value um true ah irukum</li>
-  </ul>
-  <ng-template #or>
-    <ul class="ul-list">
-      <li>If one of the value is true then all value is true.</li>
-    </ul>
-  </ng-template>
-  <app-js-code [showCode]="'boolean-or'"></app-js-code>
-  <hr />
-
-  <h2 class="h2-title">#Not</h2>
-  <ul class="ul-list" *ngIf="langEng; else not">
-    <li>Value va opposite ah mathidum</li>
-  </ul>
-  <ng-template #not>
-    <ul class="ul-list">
-      <li>It invert all value</li>
-    </ul>
-  </ng-template>
-  <app-js-code [showCode]="'boolean-not'"></app-js-code>
-  <hr />
 </div>

@@ -1,15 +1,49 @@
 <div>
-  <h2 class="h2-title">#</h2>
-  <ul class="ul-list" *ngIf="langEng; else langOther">
-    <li>Nariya piece ah seathu oru string create panum</li>
-  </ul>
-  <ng-template #langOther>
-    <ul class="ul-list">
-      <li>
+  <div>
+    <h2 class="h2-title">#Template Literals</h2>
+    <p *ngIf="langEng; else langOther">
+      Nariya piece ah seathu oru string create panum
+    </p>
+    <ng-template #langOther>
+      <p>
         A template literal can assemble multiple pieces into one final string.
-      </li>
-    </ul>
-  </ng-template>
-  <app-js-code [showCode]="'template-literals'"></app-js-code>
-  <hr />
+      </p>
+    </ng-template>
+    <hr />
+  </div>
+  <div>
+    <h3 class="h3-title">1. String Concatenation:</h3>
+    <p *ngIf="langEng; else langOther">
+      Idhu munadila irundhu use panura method + use pani string aprm variable
+      onu seathu kamipanga
+    </p>
+    <ng-template #langOther>
+      <p>
+        This is the traditional method of combining strings and variables using
+        the + operator.
+      </p>
+    </ng-template>
+    <app-js-code [showCode]="'template-literals-01'"></app-js-code>
+    <hr />
+  </div>
+  <div>
+    <h3 class="h3-title">2. Template Literals:</h3>
+    <p *ngIf="langEng; else langOther">
+      Idhu latest method ES6 la kondu vandhanga idhu expressions ah backticks `
+      aprm $&#123;&#123; veachi string an kamikum
+    </p>
+    <ng-template #langOther>
+      <p>
+        This is the modern method introduced in ES6 that allows embedding
+        expressions inside a string using backticks ` and $&#123;&#123; syntax.
+      </p>
+    </ng-template>
+    <app-js-code [showCode]="'template-literals-02'"></app-js-code>
+    <hr />
+  </div>
+  <div>
+    <h3 class="h3-title">3. New Line:</h3>
+    <app-js-code [showCode]="'template-literals-03'"></app-js-code>
+    <hr />
+  </div>
 </div>

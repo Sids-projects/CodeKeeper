@@ -115,23 +115,53 @@ console.log(x >= y); // false
 </pre>
 </div>
 
-<div *ngIf="showCode === 'template-literals'" class="code-container">
+<div *ngIf="showCode === 'template-literals-01'" class="code-container">
   <pre class="line-numbers">
 <code class="language-javascript">
 const myName = "Peter";
 const year = "2024";
 const birthYear = "1990";
 
-// Instead of this
-const aboutMe = " I'm " + myName + " my birth year is " + birthYear + " and my age is " + (year - birthYear) + "!";
+// String Concatenation
+const aboutMe = "I'm " + myName + " my birth year is " + birthYear + " and my age is " + (year - birthYear) + "!";
+console.log(aboutMe);
+
+// ** Output **
+// I'm Peter my birth year is 1990 and my age is 34!
+</code>
+</pre>
+</div>
+
+<div *ngIf="showCode === 'template-literals-02'" class="code-container">
+  <pre class="line-numbers">
+<code class="language-javascript">
+const myName = "Peter";
+const year = "2024";
+const birthYear = "1990";
+
+// Template Literals
+const aboutMe =  `I'm $&#123;myName&#125; my birth year is $&#123;birthYear&#125; and my age is $&#123;year - birthYear&#125; !`;
+console.log(aboutMe);
+
+// ** Output **
+// I'm Peter my birth year is 1990 and my age is 34!
+</code>
+</pre>
+</div>
+
+<div *ngIf="showCode === 'template-literals-03'" class="code-container">
+  <pre class="line-numbers">
+<code class="language-javascript">
+const myName = "Peter";
+const year = "2024";
+const birthYear = "1990";
+
 // New line
 console.log(“This is a \n new line”);
 
-
-// Template Literals
-const aboutMeNew =  `I'm $&#123;myName&#125; my birth year is $&#123;birthYear&#125; and my age is $&#123;year - birthYear&#125; !`;
-// New line
-console.log(`This is a new line`);
+// ** Output **
+// This is a 
+// new line
 </code>
 </pre>
 </div>
@@ -406,111 +436,6 @@ const fruitProcessor = function(apples, oranges) &#123;
 
 console.log(fruitProcessor(2,3));
 // Output - juice with 2 apples and 3 oranges
-</code>
-</pre>
-</div>
-
-<div *ngIf="showCode === 'array-01'" class="code-container">
-  <pre class="line-numbers">
-<code class="language-javascript">
-  // Literal Syntax :
-  const animals = ['dog', 'cat', 'cow'];
-  
-  // Otherway :
-  const years = new array(1991, 1984, 1998);
-  
-  const animals = ['dog', 'cat', 'cow'];
-  console.log(animals.length);
-  console.log(animals[animals.length - 1]);
-  animals[2];
-  
-  // Output : cow
-  
-  // We can change the element in a array
-  const animals = ['dog', 'cat', 'cow'];
-
-  animals[2] = 'chicken';
-</code>
-</pre>
-</div>
-
-<div *ngIf="showCode === 'array-02'" class="code-container">
-  <pre class="line-numbers">
-<code class="language-javascript">
-const firstName = 'Peter';
-const peterData = [firstName, 'male', 2037 - 1998];  
-
-// Should not use ❌
-const years = [1998, 1999, 2000, 2001];
-const calcAge = function(birthYear) &#123;
-  Return 2037 - birthYear;
-&#125;
-calcAge(years);
-</code>
-</pre>
-</div>
-
-<div *ngIf="showCode === 'array-03'" class="code-container">
-  <pre class="line-numbers">
-<code class="language-javascript">
-// Push
-const animals = ['dog', 'cat', 'cow'];
-animals.push('pig');
-// Changes : ['dog', 'cat', 'cow', 'pig']
-</code>
-</pre>
-</div>
-
-<div *ngIf="showCode === 'array-04'" class="code-container">
-  <pre class="line-numbers">
-<code class="language-javascript">
-// Unshift
-const animals = ['dog', 'cat', 'cow', 'pig'];
-animals.unshift('horse');
-// Changes :  ['horse', 'dog', 'cat', 'cow', 'pig']
-</code>
-</pre>
-</div>
-
-<div *ngIf="showCode === 'array-05'" class="code-container">
-  <pre class="line-numbers">
-<code class="language-javascript">
-// Pop
-const animals = ['dog', 'cat', 'cow', 'pig'];
-animals.pop('pig');
-// Changes : ['dog', 'cat', 'cow']
-</code>
-</pre>
-</div>
-
-<div *ngIf="showCode === 'array-06'" class="code-container">
-  <pre class="line-numbers">
-<code class="language-javascript">
-// Shift
-const animals = ['dog', 'cat', 'cow'];
-animals.shift('dog');
-// Changes :  ['cat', 'cow']
-</code>
-</pre>
-</div>
-
-<div *ngIf="showCode === 'array-07'" class="code-container">
-  <pre class="line-numbers">
-<code class="language-javascript">
-// indexOf()
-// Similar to indexof()
-// Can find the position of the element.
-const animals = ['dog', 'cat', 'cow'];
-console.log(animals.indexOf('dog'));
-// Output : 0
-
-// include() : (True or False)
-// We can use the input method to write conditions.
-console.log(animals.indexof('dog'));
-// Example :
-const animals = ["dog", "pig"];
-console.log(`You have a pet`);
-// Output : true
 </code>
 </pre>
 </div>
