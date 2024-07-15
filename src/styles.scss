@@ -148,10 +148,11 @@ span.token.operator {
 }
 
 .h3-title {
-  font-size: 1.8rem !important;
-  font-weight: 700 !important;
+  font-size: 1.4rem !important;
+  font-weight: 600 !important;
   letter-spacing: 0.2rem !important;
   margin-bottom: 1.2rem !important;
+  color: #ffd966;
 }
 
 hr {
@@ -359,6 +360,10 @@ hr {
 
       .else-if-diagram {
         max-width: 36rem !important;
+      }
+
+      .switchCase {
+        max-width: 62rem !important;
       }
     }
   }

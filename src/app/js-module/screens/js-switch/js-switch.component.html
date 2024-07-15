@@ -1,13 +1,77 @@
 <div>
   <h2 class="h2-title"># Switch Case</h2>
-  <!-- <ul class="ul-list" *ngIf="langEng; else langOther">
-    <li></li>
-  </ul>
-  <ng-template #langOther>
+  <div *ngIf="langEng; else langOther">
     <ul class="ul-list">
-      <li></li>
+      <li>
+        Namba kudukura condition ah poruthu nairya options la irundhu true
+        aagura block ah mattum execute panum
+      </li>
+      <li>
+        if, else if badhila use panalam. code ah read pana easy ya irukum nariya
+        condition ah check panama thevaiyadha mattum run panum
+      </li>
     </ul>
-  </ng-template> -->
-  <app-js-code [showCode]="'switch-case'"></app-js-code>
+    <hr />
+    <h3 class="h3-title"># Explanation</h3>
+    <ol class="ul-list">
+      <li><b>Expression:</b> idhu oru expression ah oru time dha run panum.</li>
+      <li>
+        <b>Cases:</b> Expression oda value oru oru case oda value la um compare
+        pani run panum.
+      </li>
+      <li>
+        <b>Break:</b> Switch block ah vitu veliya vara use aagum. Break illana
+        condition true aana kuda adhu next iruka ella case ah um run panum
+      </li>
+      <li>
+        <b>Default:</b> Idhu venum na use panikalam endha case um true aagala
+        apdina default case run aagum
+      </li>
+    </ol>
+  </div>
+  <ng-template #langOther>
+    <div>
+      <ul class="ul-list">
+        <li>
+          It is used to execute one block of code out of multiple options based
+          on the value of an expression.
+        </li>
+        <li>
+          It is an alternative to using multiple if...else if statements and can
+          make your code more readable when there are many conditions to check.
+        </li>
+      </ul>
+      <hr />
+      <h3 class="h3-title"># Explanation</h3>
+      <ol class="ul-list">
+        <li>
+          <b>Expression:</b> The switch statement evaluates an expression once.
+        </li>
+        <li>
+          <b>Cases:</b> The expression's value is compared with the values of
+          each case clause.
+        </li>
+        <li>
+          <b>Break:</b> The break statement exits the switch block. Without
+          break, the code will continue to execute the next case even if a match
+          has been found (fall-through behavior).
+        </li>
+        <li>
+          <b>Default:</b> The default clause is optional and executes if none of
+          the case values match the expression. It's like the else in if...else
+          statements.
+        </li>
+      </ol>
+    </div>
+  </ng-template>
+  <hr />
+  <h3 class="h3-title"># Example</h3>
+  <div class="diagram-div">
+    <img
+      src="./../../../../assets/switch-case.svg"
+      alt="comment-diagram"
+      class="switchCase common-diagram"
+    />
+  </div>
   <hr />
 </div>
