@@ -2,30 +2,119 @@
   <h2 class="h2-title"># Function</h2>
   <div *ngIf="langEng; else langOther">
     <p class="quote">
-      Functions are fundamental building blocks in JavaScript. They allow you to
-      encapsulate code into reusable blocks. Functions can take inputs
-      (parameters), execute code, and return outputs (results).
+      Functions javascript la mukiyamana oru block idhu use pani namba reusable
+      code block create panalam Functions parameters input ah vangikum andha
+      andha block of code la run pani output tharum.
     </p>
     <hr />
     <h3 class="h3-title"># Function Declaration:</h3>
-    <ul class="ul-list">
-      <li>
-        Functions radhu oru piece of code namba adhu ethana time venalum reuse
-        panikalam
-      </li>
-      <li>
-        Variable la oru value store panalam ana oru function la namba oru line
-        ah ye store panikalam
-      </li>
-      <li>
-        Namba oru function ulla data va pass panikalam adhu andha data va return
-        um panum
-      </li>
-      <li>
-        Parameters lam andha function oda variables function ah call panumbodhu
-        define aagum
-      </li>
-    </ul>
+    <p>Eppome use panra normal function</p>
+    <div class="diagram-div">
+      <img
+        src="./assets/function.svg"
+        alt="comment-diagram"
+        class="function common-diagram"
+      />
+    </div>
+    <hr />
+    <h3 class="h3-title"># Function Expression:</h3>
+    <p>
+      Functions ah variable ah asign pani expression ah um kudukalam. idhu
+      mathri declare panra function name dha function expression.
+    </p>
+    <div class="diagram-div">
+      <img
+        src="./assets/function-expression.svg"
+        alt="comment-diagram"
+        class="function-expression common-diagram"
+      />
+    </div>
+    <hr />
+    <h3 class="h3-title"># Arrow Function:</h3>
+    <p>
+      Arrow function code ah kami pani oru function expression kudukum adhu =>
+      syntax ah use pani chinna function kudukum.
+    </p>
+    <div class="diagram-div">
+      <img
+        src="./assets/arrow-function.svg"
+        alt="comment-diagram"
+        class="arrow-function common-diagram"
+      />
+    </div>
+    <hr />
+    <h3 class="h3-title"># Calling a Function:</h3>
+    <p>
+      Oru function ah execute pana adha function name ah call pani adhu param
+      pass panra mathri irundha pass pani call panikalam
+    </p>
+    <div class="diagram-div">
+      <img
+        src="./assets/function-calling.svg"
+        alt="comment-diagram"
+        class="function-calling common-diagram"
+      />
+    </div>
+    <hr />
+    <h3 class="h3-title"># Parameters and Arguments:</h3>
+    <p>
+      Paramters function ku placeholders mathri andha function adha use panikum.
+    </p>
+    <p>Arguments direct ah functions ku pass panra values.</p>
+    <div class="diagram-div">
+      <img
+        src="./assets/function-param-arg.svg"
+        alt="comment-diagram"
+        class="function-param-arg common-diagram"
+      />
+    </div>
+    <hr />
+    <h3 class="h3-title"># Returning a Value:</h3>
+    <p>
+      retrun statement use pani function value return panum. reutrn statement
+      illana undefined nu result tharum
+    </p>
+    <div class="diagram-div">
+      <img
+        src="./assets/function-return.svg"
+        alt="comment-diagram"
+        class="function-return common-diagram"
+      />
+    </div>
+    <hr />
+    <h3 class="h3-title"># Function with Default Parameters:</h3>
+    <p>You can provide default values for function parameters</p>
+    <div class="diagram-div">
+      <img
+        src="./assets/default-parameter.svg"
+        alt="comment-diagram"
+        class="default-parameter common-diagram"
+      />
+    </div>
+    <hr />
+    <h3 class="h3-title"># Arrow Function with Implicit Return:</h3>
+    <p>For concise functions, arrow functions can have an implicit return:</p>
+    <div class="diagram-div">
+      <img
+        src="./assets/arrow-function-return.svg"
+        alt="comment-diagram"
+        class="arrow-function-return common-diagram"
+      />
+    </div>
+    <hr />
+    <h3 class="h3-title">Using Functions in Arrays and Objects</h3>
+    <p>
+      Functions can be stored in arrays or objects and passed as arguments to
+      other functions:
+    </p>
+    <div class="diagram-div">
+      <img
+        src="./assets/function-array-object.svg"
+        alt="comment-diagram"
+        class="function-array-object common-diagram"
+      />
+    </div>
+    <hr />
   </div>
   <ng-template #langOther>
     <div>
@@ -147,5 +236,4 @@
       <hr />
     </div>
   </ng-template>
-  <hr />
 </div>
