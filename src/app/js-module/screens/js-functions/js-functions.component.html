@@ -1,95 +1,151 @@
 <div>
   <h2 class="h2-title"># Function</h2>
-  <ul class="ul-list" *ngIf="langEng; else langOther">
-    <li>
-      Functions radhu oru piece of code namba adhu ethana time venalum reuse
-      panikalam
-    </li>
-    <li>
-      Variable la oru value store panalam ana oru function la namba oru line ah
-      ye store panikalam
-    </li>
-    <li>
-      Namba oru function ulla data va pass panikalam adhu andha data va return
-      um panum
-    </li>
-    <li>
-      Parameters lam andha function oda variables function ah call panumbodhu
-      define aagum
-    </li>
-  </ul>
-  <ng-template #langOther>
+  <div *ngIf="langEng; else langOther">
+    <p class="quote">
+      Functions are fundamental building blocks in JavaScript. They allow you to
+      encapsulate code into reusable blocks. Functions can take inputs
+      (parameters), execute code, and return outputs (results).
+    </p>
+    <hr />
+    <h3 class="h3-title"># Function Declaration:</h3>
     <ul class="ul-list">
-      <li>Function is a piece of code that we can reuse over and over again</li>
       <li>
-        A variable holds value but a function can hold one or more complete
-        lines of code.
+        Functions radhu oru piece of code namba adhu ethana time venalum reuse
+        panikalam
       </li>
       <li>
-        We can also pass data into a function and additionally, a function can
-        also return data as well.
+        Variable la oru value store panalam ana oru function la namba oru line
+        ah ye store panikalam
       </li>
       <li>
-        Parameters are like variables that are specific only to this function
-        and they will get defined when we call that function.
+        Namba oru function ulla data va pass panikalam adhu andha data va return
+        um panum
+      </li>
+      <li>
+        Parameters lam andha function oda variables function ah call panumbodhu
+        define aagum
       </li>
     </ul>
-  </ng-template>
-  <app-js-code [showCode]="'function-01'"></app-js-code>
-  <hr />
-
-  <h2 class="h2-title"># Expression & Declaration</h2>
-  <table class="table table-dark" *ngIf="langEng; else expDec">
-    <thead>
-      <tr>
-        <th>Expression & Declaration</th>
-        <th>Function Declaration</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          Name illadha function ah synonyms function nu soluvanga andha function
-          code oru expression ah irukum
-        </td>
-        <td>Sadha function</td>
-      </tr>
-      <tr>
-        <td>
-          <app-js-code [showCode]="'function-02'"></app-js-code>
-        </td>
-        <td>
-          <app-js-code [showCode]="'function-03'"></app-js-code>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <ng-template #expDec>
-    <table class="table table-dark">
-      <thead>
-        <tr>
-          <th>Expression & Declaration</th>
-          <th>Function Declaration</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            A Function without name is called as synonyms function so this code
-            is basically an expression.
-          </td>
-          <td>A normal function</td>
-        </tr>
-        <tr>
-          <td>
-            <app-js-code [showCode]="'function-02'"></app-js-code>
-          </td>
-          <td>
-            <app-js-code [showCode]="'function-03'"></app-js-code>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+  </div>
+  <ng-template #langOther>
+    <div>
+      <p class="quote">
+        Functions are fundamental building blocks in JavaScript. They allow you
+        to encapsulate code into reusable blocks. Functions can take inputs
+        (parameters), execute code, and return outputs (results).
+      </p>
+      <hr />
+      <h3 class="h3-title"># Function Declaration:</h3>
+      <p>This is the most common way to define a function.</p>
+      <div class="diagram-div">
+        <img
+          src="./assets/function.svg"
+          alt="comment-diagram"
+          class="function common-diagram"
+        />
+      </div>
+      <hr />
+      <h3 class="h3-title"># Function Expression:</h3>
+      <p>
+        Functions can also be defined as expressions and assigned to variables.
+        This way of defining a function is known as a function expression.
+      </p>
+      <div class="diagram-div">
+        <img
+          src="./assets/function-expression.svg"
+          alt="comment-diagram"
+          class="function-expression common-diagram"
+        />
+      </div>
+      <hr />
+      <h3 class="h3-title"># Arrow Function:</h3>
+      <p>
+        Arrow functions provide a concise syntax for writing function
+        expressions. They use the => syntax and are often used for short
+        functions.
+      </p>
+      <div class="diagram-div">
+        <img
+          src="./assets/arrow-function.svg"
+          alt="comment-diagram"
+          class="arrow-function common-diagram"
+        />
+      </div>
+      <hr />
+      <h3 class="h3-title"># Calling a Function:</h3>
+      <p>
+        To execute a function, you call it by its name followed by parentheses,
+        passing any required arguments.
+      </p>
+      <div class="diagram-div">
+        <img
+          src="./assets/function-calling.svg"
+          alt="comment-diagram"
+          class="function-calling common-diagram"
+        />
+      </div>
+      <hr />
+      <h3 class="h3-title"># Parameters and Arguments:</h3>
+      <p>Parameters are placeholders for values that the function uses.</p>
+      <p>
+        Arguments are the actual values passed to the function when it is
+        called.
+      </p>
+      <div class="diagram-div">
+        <img
+          src="./assets/function-param-arg.svg"
+          alt="comment-diagram"
+          class="function-param-arg common-diagram"
+        />
+      </div>
+      <hr />
+      <h3 class="h3-title"># Returning a Value:</h3>
+      <p>
+        A function can return a value using the return statement. If no return
+        statement is used, the function returns undefined.
+      </p>
+      <div class="diagram-div">
+        <img
+          src="./assets/function-return.svg"
+          alt="comment-diagram"
+          class="function-return common-diagram"
+        />
+      </div>
+      <hr />
+      <h3 class="h3-title"># Function with Default Parameters:</h3>
+      <p>You can provide default values for function parameters</p>
+      <div class="diagram-div">
+        <img
+          src="./assets/default-parameter.svg"
+          alt="comment-diagram"
+          class="default-parameter common-diagram"
+        />
+      </div>
+      <hr />
+      <h3 class="h3-title"># Arrow Function with Implicit Return:</h3>
+      <p>For concise functions, arrow functions can have an implicit return:</p>
+      <div class="diagram-div">
+        <img
+          src="./assets/arrow-function-return.svg"
+          alt="comment-diagram"
+          class="arrow-function-return common-diagram"
+        />
+      </div>
+      <hr />
+      <h3 class="h3-title">Using Functions in Arrays and Objects</h3>
+      <p>
+        Functions can be stored in arrays or objects and passed as arguments to
+        other functions:
+      </p>
+      <div class="diagram-div">
+        <img
+          src="./assets/function-array-object.svg"
+          alt="comment-diagram"
+          class="function-array-object common-diagram"
+        />
+      </div>
+      <hr />
+    </div>
   </ng-template>
   <hr />
 </div>

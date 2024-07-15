@@ -365,6 +365,42 @@ hr {
       .switchCase {
         max-width: 62rem !important;
       }
+
+      .function {
+        max-width: 48rem !important;
+      }
+
+      .function-expression {
+        max-width: 46rem !important;
+      }
+
+      .arrow-function {
+        max-width: 36rem !important;
+      }
+
+      .function-calling {
+        max-width: 34rem !important;
+      }
+
+      .function-param-arg {
+        max-width: 36rem !important;
+      }
+
+      .function-return {
+        max-width: 34rem !important;
+      }
+
+      .default-parameter {
+        max-width: 35rem !important;
+      }
+
+      .arrow-function-return {
+        max-width: 26rem !important;
+      }
+
+      .function-array-object {
+        max-width: 36rem !important;
+      }
     }
   }
 }
