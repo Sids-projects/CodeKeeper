@@ -1,44 +1,105 @@
 <div>
-  <h2 class="h2-title"># If Else</h2>
-  <ul class="ul-list" *ngIf="langEng; else ifElse">
-    <li>if/else statement ah control structure num soluvanga</li>
-    <li>
-      Ean apdi soluvanga if/else la namaku ethana controls venumo veachikalam
-      namba conditions ku eatha mathri
-    </li>
-    <li>
-      Namaku endha block of code run aaganum aaga kudadhu nu namba set panikalam
-    </li>
-    <li>If/else ulla declare pana block ah veliya access pana mudiyadhu</li>
-  </ul>
+  <h2 class="h2-title"># If, If Else, Else</h2>
+  <div *ngIf="langEng; else ifElse">
+    <p class="quote">
+      The if, else if, and else statements are used for conditional execution of
+      code blocks. <br />They allow you to execute different blocks of code
+      based on different conditions.
+    </p>
+    <hr />
+    <h2 class="h3-title">If</h2>
+    <ul class="ul-list">
+      <li>If statement oru condition ah check panum adhu true ah illaya nu</li>
+      <li>Adhu true ah irundha andha block ulla iruka code run aagum</li>
+      <li>False aachuna skip aagidum</li>
+    </ul>
+    <div class="diagram-div">
+      <img
+        src="./assets/if.svg"
+        alt="comment-diagram"
+        class="array-whatIsArray common-diagram"
+      />
+    </div>
+    <hr />
+    <h2 class="h3-title">If Else</h2>
+    <p>'If' condition false ah irundha 'Else' part run aagum</p>
+    <div class="diagram-div">
+      <img
+        src="./assets/if-else.svg"
+        alt="comment-diagram"
+        class="array-whatIsArray common-diagram"
+      />
+    </div>
+    <hr />
+    <h2 class="h3-title">Else If</h2>
+    <p>
+      'If' condition false ah irundha 'Else if' part run aagum. 'if' & 'else if
+      rendume false ah irundha else run aagum'
+    </p>
+    <div class="diagram-div">
+      <img
+        src="./assets/else-if.svg"
+        alt="comment-diagram"
+        class="array-whatIsArray common-diagram"
+      />
+    </div>
+    <hr />
+  </div>
   <ng-template #ifElse>
-    <ul class="ul-list">
-      <li>if/else statement also known as control section.</li>
-      <li>
-        Because this structure allows us to have more control over the way that
-        our code is executed.
-      </li>
-      <li>
-        We can control block of the code that can execute and block of the code
-        the cannot execute.
-      </li>
-      <li>
-        The condition declared inside of the if/else block will not be
-        accessible outside of the block.
-      </li>
-    </ul>
+    <div>
+      <p class="quote">
+        The if, else if, and else statements are used for conditional execution
+        of code blocks. <br />They allow you to execute different blocks of code
+        based on different conditions.
+      </p>
+      <hr />
+      <h2 class="h3-title">If</h2>
+      <ul class="ul-list">
+        <li>The if statement evaluates a condition.</li>
+        <li>
+          If the condition evaluates to true, the code block inside the if
+          statement is executed.
+        </li>
+        <li>
+          If the condition evaluates to false, the code block inside the if
+          statement is skipped.
+        </li>
+      </ul>
+      <div class="diagram-div">
+        <img
+          src="./assets/if.svg"
+          alt="comment-diagram"
+          class="if-diagram common-diagram"
+        />
+      </div>
+      <hr />
+      <h2 class="h3-title">If Else</h2>
+      <p>
+        If the 'If' condition is false, the code block inside the 'else'
+        statement is executed.
+      </p>
+      <div class="diagram-div">
+        <img
+          src="./assets/if-else.svg"
+          alt="comment-diagram"
+          class="if-else-diagram common-diagram"
+        />
+      </div>
+      <hr />
+      <h2 class="h3-title">Else If</h2>
+      <p>
+        If the 'If' condition is false, the code block inside the 'else if'
+        statement is executed. If both the 'if' & 'else if' is false 'else' will
+        be executed.
+      </p>
+      <div class="diagram-div">
+        <img
+          src="./assets/else-if.svg"
+          alt="comment-diagram"
+          class="else-if-diagram common-diagram"
+        />
+      </div>
+      <hr />
+    </div>
   </ng-template>
-  <app-js-code [showCode]="'if-else'"></app-js-code>
-  <hr />
-  <h2 class="h2-title"># If Else</h2>
-  <ul class="ul-list" *ngIf="langEng; else elseIf">
-    <li>If part false ah irundhuchina else if run aagum</li>
-  </ul>
-  <ng-template #elseIf>
-    <ul class="ul-list">
-      <li>If the if part is false then js move to else if part.</li>
-    </ul>
-  </ng-template>
-  <app-js-code [showCode]="'if-else'"></app-js-code>
-  <hr />
 </div>
