@@ -143,7 +143,7 @@ span.token.operator {
   font-size: 1.6rem !important;
   font-weight: 600 !important;
   letter-spacing: 0.2rem !important;
-  margin-bottom: 1.4rem !important;
+  margin-bottom: 0.8rem !important;
   color: #ffd966;
 }
 
@@ -151,7 +151,6 @@ span.token.operator {
   font-size: 1.4rem !important;
   font-weight: 600 !important;
   letter-spacing: 0.2rem !important;
-  margin-bottom: 1.2rem !important;
   color: #ffd966;
 }
 
@@ -400,6 +399,26 @@ hr {
 
       .function-array-object {
         max-width: 36rem !important;
+      }
+
+      .adv-set-tn-01 {
+        max-width: 48rem !important;
+      }
+
+      .adv-set-tn-02 {
+        max-width: 58rem !important;
+      }
+
+      .adv-set-tn-03 {
+        max-width: 68rem !important;
+      }
+
+      .adv-set-tn-04 {
+        max-width: 78rem !important;
+      }
+
+      .adv-set-tn-05 {
+        max-width: 78rem !important;
       }
     }
   }
