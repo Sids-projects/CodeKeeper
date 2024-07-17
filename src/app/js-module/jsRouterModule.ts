@@ -18,6 +18,8 @@ import { JsFunctionsComponent } from './screens/js-functions/js-functions.compon
 import { JsProject01Component } from './screens/js-project01/js-project01.component';
 import { JsConversionComponent } from './screens/js-conversion/js-conversion.component';
 import { JsAdvIntroComponent } from './screens/js-adv-intro/js-adv-intro.component';
+import { JsObjectComponent } from './screens/js-object/js-object.component';
+import { JsLoopComponent } from './screens/js-loop/js-loop.component';
 
 const routes: Routes = [
   {
@@ -39,6 +41,8 @@ const routes: Routes = [
       { path: 'JsIfelseRoute', component: JsIfelseComponent },
       { path: 'JsSwitchRoute', component: JsSwitchComponent },
       { path: 'JsFunctionsRoute', component: JsFunctionsComponent },
+      { path: 'JsObjectRoute', component: JsObjectComponent },
+      { path: 'JsLoopRoute', component: JsLoopComponent },
       { path: 'JsProject01Route', component: JsProject01Component },
       { path: 'JsAdvIntroRoute', component: JsAdvIntroComponent },
     ],

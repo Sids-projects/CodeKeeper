@@ -1,0 +1,53 @@
+<div>
+  <h2 class="h2-title"># Object</h2>
+  <div *ngIf="langEng; else and">
+    <ul class="ul-list">
+      <li>Different variables ah group pana object use panuvanga</li>
+      <li>Objects oru unstructured data.</li>
+      <li>
+        Namba object la irundhu properties get panikalam andha property name ah
+        use pani.
+      </li>
+    </ul>
+    <div class="diagram-div">
+      <img
+        src="./assets/object.svg"
+        alt="object-digram"
+        class="object-digram common-diagram"
+      />
+    </div>
+    <hr />
+  </div>
+
+  <ng-template #and>
+    <div>
+      <ul class="ul-list">
+        <li>
+          We use objects to essentially group together different variables.
+        </li>
+        <li>Objects are unstructured data.</li>
+        <li>
+          We can get the properties from the objects by using its name itself.
+        </li>
+      </ul>
+    </div>
+    <div class="diagram-div">
+      <img
+        src="./assets/object.svg"
+        alt="object-digram"
+        class="object-digram common-diagram"
+      />
+    </div>
+    <hr />
+  </ng-template>
+
+  <h3 class="h3-title"># Example</h3>
+  <div class="diagram-div">
+    <img
+      src="./assets/object-ex.svg"
+      alt="object-digram"
+      class="object-ex common-diagram"
+    />
+  </div>
+  <hr />
+</div>
