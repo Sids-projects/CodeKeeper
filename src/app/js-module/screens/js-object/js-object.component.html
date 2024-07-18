@@ -1,6 +1,6 @@
 <div>
   <h2 class="h2-title"># Object</h2>
-  <div *ngIf="langEng; else and">
+  <div *ngIf="langEng; else obj">
     <ul class="ul-list">
       <li>Different variables ah group pana object use panuvanga</li>
       <li>Objects oru unstructured data.</li>
@@ -16,10 +16,9 @@
         class="object-digram common-diagram"
       />
     </div>
-    <hr />
   </div>
 
-  <ng-template #and>
+  <ng-template #obj>
     <div>
       <ul class="ul-list">
         <li>
@@ -38,8 +37,8 @@
         class="object-digram common-diagram"
       />
     </div>
-    <hr />
   </ng-template>
+  <hr />
 
   <h3 class="h3-title"># Example</h3>
   <div class="diagram-div">
@@ -50,4 +49,26 @@
     />
   </div>
   <hr />
+
+  <div *ngIf="langEng; else objMethod">
+    <div class="diagram-div">
+      <img
+        src="./assets/object-tn-methods.svg"
+        alt="object-digram"
+        class="object-method common-diagram"
+      />
+    </div>
+    <hr />
+  </div>
+
+  <ng-template #objMethod>
+    <div class="diagram-div">
+      <img
+        src="./assets/object-en-methods.svg"
+        alt="object-digram"
+        class="object-method common-diagram"
+      />
+    </div>
+    <hr />
+  </ng-template>
 </div>
