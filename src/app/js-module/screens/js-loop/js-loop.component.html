@@ -1,1 +1,139 @@
-<p>js-loop works!</p>
+<div>
+  <div *ngIf="langEng; else loop">
+    <h2 class="h2-title"># Loop</h2>
+    <p class="quote">
+      Namba kudutha condition true aagura verikum block ulla iruka code run
+      aagite irukum. <br />JavaScript la nariya loops support aagum: for, while,
+      do...while, and for...in/for...of loops.
+    </p>
+    <hr />
+    <h3 class="h3-title"># For Loop</h3>
+    <div class="diagram-div">
+      <img
+        src="./assets/for-loop-tn.svg"
+        alt="comment-diagram"
+        class="for-loop common-diagram"
+      />
+    </div>
+    <hr />
+    <h3 class="h3-title"># While Loop</h3>
+    <p>Namba sona condition true aagura verikum while loop run aagum</p>
+    <div class="diagram-div">
+      <img
+        src="./assets/while-loop.svg"
+        alt="comment-diagram"
+        class="while-loop common-diagram"
+      />
+    </div>
+    <hr />
+    <h3 class="h3-title"># do...while Loop</h3>
+    <p>
+      do...while loop while loop mathriye dha, ana idhu do block ah execute
+      panita aprm dha condition ah check panum. adhunala kandipa do block oru
+      time aachi execute aagidum.
+    </p>
+    <div class="diagram-div">
+      <img
+        src="./assets/do-while-loop-tn.svg"
+        alt="comment-diagram"
+        class="do-while-loop common-diagram"
+      />
+    </div>
+    <hr />
+    <h3 class="h3-title"># for...in Loop</h3>
+    <p>for...in loop object oda properties ah iterate panradhuku use aagum.</p>
+    <div class="diagram-div">
+      <img
+        src="./assets/for-in-loop.svg"
+        alt="comment-diagram"
+        class="for-in-loop common-diagram"
+      />
+    </div>
+    <hr />
+    <h3 class="h3-title"># for...of Loop</h3>
+    <p>
+      The for...of loop use pani iterable aagura objects ah iterate panikalam
+      arrays, strings, maps, sets, and more idhula lam panikalam. idhu direct ah
+      loop la index of help illa variable use pani object ulla iruka ellam
+      values ah um access panikalam
+    </p>
+    <div class="diagram-div">
+      <img
+        src="./assets/for-of-loop.svg"
+        alt="comment-diagram"
+        class="for-of-loop common-diagram"
+      />
+    </div>
+    <hr />
+  </div>
+
+  <ng-template #loop>
+    <h2 class="h2-title"># Loop</h2>
+    <p class="quote">
+      Loops are used to repeatedly run a block of code until a specified
+      condition is met. <br />JavaScript supports several types of loops: for,
+      while, do...while, and for...in/for...of loops.
+    </p>
+    <hr />
+    <h3 class="h3-title"># For Loop</h3>
+    <div class="diagram-div">
+      <img
+        src="./assets/for-loop-en.svg"
+        alt="comment-diagram"
+        class="for-loop common-diagram"
+      />
+    </div>
+    <hr />
+    <h3 class="h3-title"># While Loop</h3>
+    <p>The while loop runs as long as a specified condition is true.</p>
+    <div class="diagram-div">
+      <img
+        src="./assets/while-loop.svg"
+        alt="comment-diagram"
+        class="while-loop common-diagram"
+      />
+    </div>
+    <hr />
+    <h3 class="h3-title"># do...while Loop</h3>
+    <p>
+      The do...while loop is similar to the while loop, but it checks the
+      condition after executing the block of code. This means the block of code
+      will always execute at least once.
+    </p>
+    <div class="diagram-div">
+      <img
+        src="./assets/do-while-loop-en.svg"
+        alt="comment-diagram"
+        class="do-while-loop common-diagram"
+      />
+    </div>
+    <hr />
+    <h3 class="h3-title"># for...in Loop</h3>
+    <p>
+      The for...in loop is used to iterate over the properties of an object.
+    </p>
+    <div class="diagram-div">
+      <img
+        src="./assets/for-in-loop.svg"
+        alt="comment-diagram"
+        class="for-in-loop common-diagram"
+      />
+    </div>
+    <hr />
+    <h3 class="h3-title"># for...of Loop</h3>
+    <p>
+      The for...of loop is a modern and concise way to iterate over iterable
+      objects such as arrays, strings, maps, sets, and more. It allows you to
+      access each element directly in a loop without having to deal with the
+      indices.
+    </p>
+    <div class="diagram-div">
+      <img
+        src="./assets/for-of-loop.svg"
+        alt="comment-diagram"
+        class="for-of-loop common-diagram"
+      />
+    </div>
+    <hr />
+  </ng-template>
+</div>
