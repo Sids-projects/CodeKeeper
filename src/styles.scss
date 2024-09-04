@@ -287,170 +287,170 @@ hr {
     height: calc(100vh - 6.8rem);
     overflow-y: scroll;
     padding: 2rem;
+  }
+}
 
-    .diagram-div {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 4rem 0;
+.diagram-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0;
 
-      img {
-        max-width: 65rem;
-        width: 100%;
-      }
+  img {
+    max-width: 65rem;
+    width: 100%;
+  }
 
-      .comment-img {
-        max-width: 58rem !important;
-      }
+  .comment-img {
+    max-width: 58rem !important;
+  }
 
-      .array-whatIsArray {
-        max-width: 38rem !important;
-      }
+  .array-whatIsArray {
+    max-width: 38rem !important;
+  }
 
-      .array-length {
-        max-width: 65rem !important;
-      }
+  .array-length {
+    max-width: 65rem !important;
+  }
 
-      .array-doDont {
-        max-width: 45rem !important;
-      }
+  .array-doDont {
+    max-width: 45rem !important;
+  }
 
-      .array-push {
-        max-width: 35rem !important;
-      }
+  .array-push {
+    max-width: 35rem !important;
+  }
 
-      .array-unshift {
-        max-width: 35rem !important;
-      }
+  .array-unshift {
+    max-width: 35rem !important;
+  }
 
-      .array-pop {
-        max-width: 35rem !important;
-      }
+  .array-pop {
+    max-width: 35rem !important;
+  }
 
-      .array-shift {
-        max-width: 35rem !important;
-      }
+  .array-shift {
+    max-width: 35rem !important;
+  }
 
-      .prompt-basicUsage {
-        max-width: 45rem !important;
-      }
+  .prompt-basicUsage {
+    max-width: 45rem !important;
+  }
 
-      .prompt-defaultValue {
-        max-width: 45rem !important;
-      }
+  .prompt-defaultValue {
+    max-width: 45rem !important;
+  }
 
-      .versions-diagram {
-        max-width: 65rem !important;
-      }
+  .versions-diagram {
+    max-width: 65rem !important;
+  }
 
-      .stmpExpr-img {
-        max-width: 70rem !important;
-      }
+  .stmpExpr-img {
+    max-width: 70rem !important;
+  }
 
-      .if-diagram {
-        max-width: 36rem !important;
-      }
+  .if-diagram {
+    max-width: 36rem !important;
+  }
 
-      .if-else-diagram {
-        max-width: 36rem !important;
-      }
+  .if-else-diagram {
+    max-width: 36rem !important;
+  }
 
-      .else-if-diagram {
-        max-width: 36rem !important;
-      }
+  .else-if-diagram {
+    max-width: 36rem !important;
+  }
 
-      .switchCase {
-        max-width: 62rem !important;
-      }
+  .switchCase {
+    max-width: 62rem !important;
+  }
 
-      .function {
-        max-width: 48rem !important;
-      }
+  .function {
+    max-width: 48rem !important;
+  }
 
-      .function-expression {
-        max-width: 46rem !important;
-      }
+  .function-expression {
+    max-width: 46rem !important;
+  }
 
-      .arrow-function {
-        max-width: 36rem !important;
-      }
+  .arrow-function {
+    max-width: 36rem !important;
+  }
 
-      .function-calling {
-        max-width: 34rem !important;
-      }
+  .function-calling {
+    max-width: 34rem !important;
+  }
 
-      .function-param-arg {
-        max-width: 36rem !important;
-      }
+  .function-param-arg {
+    max-width: 36rem !important;
+  }
 
-      .function-return {
-        max-width: 34rem !important;
-      }
+  .function-return {
+    max-width: 34rem !important;
+  }
 
-      .default-parameter {
-        max-width: 35rem !important;
-      }
+  .default-parameter {
+    max-width: 35rem !important;
+  }
 
-      .arrow-function-return {
-        max-width: 26rem !important;
-      }
+  .arrow-function-return {
+    max-width: 26rem !important;
+  }
 
-      .function-array-object {
-        max-width: 36rem !important;
-      }
+  .function-array-object {
+    max-width: 36rem !important;
+  }
 
-      .object-digram {
-        max-width: 38rem !important;
-      }
+  .object-digram {
+    max-width: 38rem !important;
+  }
 
-      .adv-set-tn-01 {
-        max-width: 48rem !important;
-      }
+  .adv-set-tn-01 {
+    max-width: 48rem !important;
+  }
 
-      .adv-set-tn-02 {
-        max-width: 58rem !important;
-      }
+  .adv-set-tn-02 {
+    max-width: 58rem !important;
+  }
 
-      .adv-set-tn-03 {
-        max-width: 68rem !important;
-      }
+  .adv-set-tn-03 {
+    max-width: 68rem !important;
+  }
 
-      .adv-set-tn-04 {
-        max-width: 78rem !important;
-      }
+  .adv-set-tn-04 {
+    max-width: 78rem !important;
+  }
 
-      .adv-set-tn-05 {
-        max-width: 78rem !important;
-      }
+  .adv-set-tn-05 {
+    max-width: 78rem !important;
+  }
 
-      .object-ex {
-        max-width: 68rem !important;
-      }
+  .object-ex {
+    max-width: 68rem !important;
+  }
 
-      .object-method {
-        max-width: 72rem !important;
-      }
+  .object-method {
+    max-width: 72rem !important;
+  }
 
-      .for-loop {
-        max-width: 52rem !important;
-      }
+  .for-loop {
+    max-width: 52rem !important;
+  }
 
-      .while-loop {
-        max-width: 38rem !important;
-      }
+  .while-loop {
+    max-width: 38rem !important;
+  }
 
-      .do-while-loop {
-        max-width: 38rem !important;
-      }
+  .do-while-loop {
+    max-width: 38rem !important;
+  }
 
-      .for-in-loop {
-        max-width: 48rem !important;
-      }
+  .for-in-loop {
+    max-width: 48rem !important;
+  }
 
-      .for-of-loop {
-        max-width: 52rem !important;
-      }
-    }
+  .for-of-loop {
+    max-width: 52rem !important;
   }
 }
 

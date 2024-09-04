@@ -24,6 +24,7 @@ import { JsCodeComponent } from './screens/js-code/js-code.component';
 import { JsAdvIntroComponent } from './screens/js-adv-intro/js-adv-intro.component';
 import { JsObjectComponent } from './screens/js-object/js-object.component';
 import { JsLoopComponent } from './screens/js-loop/js-loop.component';
+import { JsAdvThisComponent } from './screens/js-adv-this/js-adv-this.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { JsLoopComponent } from './screens/js-loop/js-loop.component';
     JsAdvIntroComponent,
     JsObjectComponent,
     JsLoopComponent,
+    JsAdvThisComponent,
   ],
   imports: [CommonModule, jsRoutingModule, MatSlideToggleModule],
 })
